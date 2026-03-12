@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>British Canadian Academy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/output.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+
+<!-- NAVBAR -->
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white shadow-[0_2px_16px_rgba(0,0,0,0.07)]">
+
+  <!-- Top red bar -->
+  <div class="h-1 bg-[#dd5236]"></div>
+
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-[76px]">
+
+      <!-- LOGO -->
+      <img src="images/Logo.jpg.jpeg"
+           class="h-12 object-contain transition duration-300 hover:scale-105"
+           alt="British Canadian Academy">
+
+      <!-- DESKTOP MENU -->
+      <nav class="hidden md:flex items-center gap-1">
+
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#academics" class="nav-link">Academics</a>
+        <a href="#student-life" class="nav-link">Student Life</a>
+        <a href="#admissions" class="nav-link">Admissions</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+        <a href="#" class="apply-btn ml-3">
+          <span>Apply Now</span>
+        </a>
+
+      </nav>
+
+      <!-- MOBILE BUTTON -->
+      <button id="menuBtn"
+              class="md:hidden flex flex-col justify-center items-center gap-[5px]
+                     w-10 h-10 rounded-lg hover:bg-blue-50 transition-colors duration-200 p-2"
+              aria-label="Toggle menu">
+        <span id="bar1" class="block w-[22px] h-[2px] bg-[#1e3a8a] rounded transition-all duration-350"></span>
+        <span id="bar2" class="block w-[22px] h-[2px] bg-[#1e3a8a] rounded transition-all duration-350"></span>
+        <span id="bar3" class="block w-[22px] h-[2px] bg-[#1e3a8a] rounded transition-all duration-350"></span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+       class="md:hidden overflow-hidden max-h-0 border-t border-transparent
+              transition-all duration-[450ms] ease-[cubic-bezier(.22,1,.36,1)]">
+    <div class="flex flex-col gap-1 px-6 py-4 pb-6">
+      <a href="#hero" class="mob-link active">Home</a>
+      <a href="#about" class="mob-link">About</a>
+      <a href="#academics" class="mob-link">Academics</a>
+      <a href="#student-life" class="mob-link">Student Life</a>
+      <a href="#admissions" class="mob-link">Admissions</a>
+      <a href="#contact" class="mob-link">Contact</a>
+      <a href="#"
+         class="mt-2 bg-[#dd5236] text-white text-center py-3.5 rounded-xl
+                font-semibold hover:bg-[#1e3a8a] transition-colors duration-300">
+        Apply Now
+      </a>
+    </div>
+  </div>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden" id="hero">
+
+
+<video
+class="absolute inset-0 w-full h-full object-cover"
+autoplay
+muted
+loop
+playsinline>
+
+<source src="videos/Vedio.mp4" type="video/mp4">
+
+</video>
+
+
+<div class="absolute inset-0 bg-gradient-to-r from-[#1e3a8a]/90 via-[#1e3a8a]/70 to-[#1e3a8a]/90"></div>
+
+
+<div class="relative z-10 text-center text-white px-6 max-w-4xl animate-hero">
+
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+
+Welcome to
+
+<span class="text-[#dd5236] block italic">
+British International
+</span>
+
+Academy
+
+</h1>
+
+
+<p class="mt-6 text-lg md:text-xl text-gray-200">
+
+Shaping Future Leaders Through Quality Education
+
+</p>
+
+
+<div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+
+<a href="#"
+class="bg-[#dd5236] px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+
+Apply Now
+
+</a>
+
+
+<a href="#"
+class="border border-white px-8 py-3 rounded-full hover:bg-white hover:text-[#1e3a8a] transition">
+
+Explore Programs
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TRUST SECTION -->
+<section class="bg-gray-50 py-20 px-4" id="about">
+  <div class="text-center mb-14">
+    <span class="inline-block bg-red-50 text-[#dd5236] text-sm font-semibold px-4 py-1 rounded-full mb-4 tracking-wide">
+      WHY CHOOSE US
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-3">
+      Excellence in Every Aspect
+    </h2>
+    <p class="text-gray-500 max-w-xl mx-auto text-base leading-relaxed">
+      We provide a world-class learning environment that nurtures every student's potential and prepares them for a global future.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="bg-white rounded-2xl p-8 text-center border-b-4 border-transparent hover:border-[#dd5236] hover:-translate-y-2 hover:shadow-xl transition-all duration-300 group">
+      <div class="w-18 h-18 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#1e3a8a] transition-colors duration-300" style="width:72px;height:72px;">
+        <svg class="text-[#1e3a8a] group-hover:text-white transition-colors duration-300" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2z"/>
+          <path d="M20 21a8 8 0 1 0-16 0"/>
+          <path d="M16 11l1.5 1.5L20 10"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-[#1e3a8a] mb-2">International Teachers</h3>
+      <p class="text-gray-500 text-sm leading-relaxed">Our educators hold internationally recognized certifications and bring years of experience to every classroom.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl p-8 text-center border-b-4 border-transparent hover:border-[#dd5236] hover:-translate-y-2 hover:shadow-xl transition-all duration-300 group">
+      <div class="bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#1e3a8a] transition-colors duration-300" style="width:72px;height:72px;">
+        <svg class="text-[#1e3a8a] group-hover:text-white transition-colors duration-300" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-[#1e3a8a] mb-2">International Curriculum</h3>
+      <p class="text-gray-500 text-sm leading-relaxed">We follow a British-Canadian academic framework that opens doors to top universities worldwide.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white rounded-2xl p-8 text-center border-b-4 border-transparent hover:border-[#dd5236] hover:-translate-y-2 hover:shadow-xl transition-all duration-300 group">
+      <div class="bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#1e3a8a] transition-colors duration-300" style="width:72px;height:72px;">
+        <svg class="text-[#1e3a8a] group-hover:text-white transition-colors duration-300" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2"/>
+          <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          <line x1="12" y1="12" x2="12" y2="16"/>
+          <line x1="10" y1="14" x2="14" y2="14"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-[#1e3a8a] mb-2">Modern Facilities</h3>
+      <p class="text-gray-500 text-sm leading-relaxed">State-of-the-art labs, smart classrooms, and a fully equipped library designed for 21st-century learning.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white rounded-2xl p-8 text-center border-b-4 border-transparent hover:border-[#dd5236] hover:-translate-y-2 hover:shadow-xl transition-all duration-300 group">
+      <div class="bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-[#1e3a8a] transition-colors duration-300" style="width:72px;height:72px;">
+        <svg class="text-[#1e3a8a] group-hover:text-white transition-colors duration-300" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+      </div>
+      <h3 class="text-lg font-semibold text-[#1e3a8a] mb-2">Safe Learning Environment</h3>
+      <p class="text-gray-500 text-sm leading-relaxed">A secure, inclusive campus where every student feels protected, respected, and inspired to grow.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCHOOL OVERVIEW SECTION -->
+<section class="bg-white py-24 px-4 overflow-hidden" >
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+    <!-- ===== LEFT: Image ===== -->
+    <div class="overview-img opacity-0 -translate-x-10 transition-all duration-700">
+      <div class="relative">
+
+       
+
+        <!-- Campus Photo -->
+        <img src="images/building1.jpg"
+             alt="British Canadian Academy"
+             class="relative z-10 w-full h-[460px] object-cover rounded-3xl shadow-md">
+
+     
+
+      </div>
+    </div>
+
+    <!-- ===== RIGHT: Text ===== -->
+    <div class="overview-content opacity-0 translate-x-10 transition-all duration-700 delay-200">
+
+      <span class="inline-block bg-red-50 text-[#dd5236] text-xs font-bold
+                   px-4 py-1 rounded-full tracking-widest uppercase mb-5">
+        About Us
+      </span>
+
+      <h2 class="text-3xl md:text-4xl font-bold text-[#1e3a8a] leading-snug mb-2"
+          style="font-family:'Playfair Display',serif;">
+        Shaping the <em class="text-[#dd5236]" style="font-style:italic;">Leaders</em><br>
+        of Tomorrow
+      </h2>
+
+      <div class="w-12 h-1 bg-[#dd5236] rounded mt-4 mb-6"></div>
+
+      <p class="text-gray-500 text-sm leading-relaxed mb-4">
+        British Canadian Academy is committed to providing high-quality education in a
+        supportive and diverse learning environment. Our mission is to nurture students
+        academically, socially, and personally.
+      </p>
+      <p class="text-gray-500 text-sm leading-relaxed mb-7">
+        We believe every student has unique potential. Through innovative teaching methods
+        and a caring community, we guide each learner toward their brightest future.
+      </p>
+
+      <!-- Checkpoints -->
+      <ul class="flex flex-col gap-3 mb-9">
+        <li class="flex items-center gap-3 text-gray-700 text-sm">
+          <span class="w-[22px] h-[22px] min-w-[22px] rounded-full bg-blue-50
+                       flex items-center justify-center">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#1e3a8a"
+                 stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="2 6 5 9 10 3"/>
+            </svg>
+          </span>
+          British &amp; Canadian accredited programs
+        </li>
+        <li class="flex items-center gap-3 text-gray-700 text-sm">
+          <span class="w-[22px] h-[22px] min-w-[22px] rounded-full bg-blue-50
+                       flex items-center justify-center">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="#1e3a8a"
+                 stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="2 6 5 9 10 3"/>
+            </svg>
+          </span>
+          KG through Grade 12 — complete journey
+        </li>
+      </ul>
+
+      <a href="#"
+         class="inline-flex items-center gap-2 bg-[#1e3a8a] text-white
+                px-8 py-4 rounded-full font-semibold text-sm
+                hover:bg-[#dd5236] hover:-translate-y-1 hover:shadow-xl
+                transition-all duration-300 group">
+        Learn More
+        <svg class="group-hover:translate-x-1 transition-transform duration-300"
+             width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+             stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATISTICS SECTION -->
+<section class="bg-gray-50 py-14 px-4 overflow-hidden relative" id="academics">
+
+  <!-- Decorative circles -->
+  <div class="absolute -top-28 -left-28 w-96 h-96 rounded-full bg-[#1e3a8a]/5 pointer-events-none"></div>
+  <div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-[#dd5236]/5 pointer-events-none"></div>
+
+  <!-- Header -->
+  <div class="text-center mb-10">
+    <span class="inline-block bg-red-50 text-[#dd5236] text-xs font-bold
+                 px-5 py-1.5 rounded-full tracking-widest uppercase mb-3">
+      By the Numbers
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold text-[#1e3a8a]"
+        style="font-family:'Playfair Display',serif;">
+      Our School in Numbers
+    </h2>
+  </div>
+
+  <!-- Grid -->
+  <div class="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5">
+
+    <!-- Students -->
+    <div class="stat-card bg-white rounded-2xl p-7 text-center border border-gray-100 relative overflow-hidden
+                opacity-0 translate-y-9 transition-all duration-700
+                hover:shadow-xl hover:border-blue-100 group"
+         style="transition-delay:0s;" data-target="1200" data-suffix="+">
+      <div class="absolute bottom-0 left-0 right-0 h-1 bg-[#1e3a8a]
+                  scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 rounded-b-2xl"></div>
+      <div class="icon-box w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4
+                  group-hover:bg-[#1e3a8a] group-hover:-rotate-6 group-hover:scale-110 transition-all duration-300">
+        <svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      </div>
+      <div class="flex items-end justify-center gap-0.5">
+        <span class="counter text-4xl font-bold text-[#1e3a8a]" style="font-family:'Playfair Display',serif;line-height:1;">0</span>
+        <span class="text-2xl font-bold text-[#dd5236] leading-tight">+</span>
+      </div>
+      <div class="w-7 h-[3px] bg-[#dd5236] rounded mx-auto my-2.5"></div>
+      <p class="text-gray-500 text-sm font-medium">Students</p>
+    </div>
+
+    <!-- Teachers -->
+    <div class="stat-card bg-white rounded-2xl p-7 text-center border border-gray-100 relative overflow-hidden
+                opacity-0 translate-y-9 transition-all duration-700
+                hover:shadow-xl hover:border-blue-100 group"
+         style="transition-delay:0.1s;" data-target="80" data-suffix="+">
+      <div class="absolute bottom-0 left-0 right-0 h-1 bg-[#1e3a8a]
+                  scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 rounded-b-2xl"></div>
+      <div class="icon-box w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4
+                  group-hover:bg-[#1e3a8a] group-hover:-rotate-6 group-hover:scale-110 transition-all duration-300">
+        <svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2z"/>
+          <path d="M20 21a8 8 0 1 0-16 0"/>
+          <polyline points="16 11 17.5 12.5 20 10"/>
+        </svg>
+      </div>
+      <div class="flex items-end justify-center gap-0.5">
+        <span class="counter text-4xl font-bold text-[#1e3a8a]" style="font-family:'Playfair Display',serif;line-height:1;">0</span>
+        <span class="text-2xl font-bold text-[#dd5236] leading-tight">+</span>
+      </div>
+      <div class="w-7 h-[3px] bg-[#dd5236] rounded mx-auto my-2.5"></div>
+      <p class="text-gray-500 text-sm font-medium">Teachers</p>
+    </div>
+
+    <!-- Classrooms -->
+    <div class="stat-card bg-white rounded-2xl p-7 text-center border border-gray-100 relative overflow-hidden
+                opacity-0 translate-y-9 transition-all duration-700
+                hover:shadow-xl hover:border-blue-100 group"
+         style="transition-delay:0.2s;" data-target="25" data-suffix="">
+      <div class="absolute bottom-0 left-0 right-0 h-1 bg-[#1e3a8a]
+                  scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 rounded-b-2xl"></div>
+      <div class="icon-box w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4
+                  group-hover:bg-[#1e3a8a] group-hover:-rotate-6 group-hover:scale-110 transition-all duration-300">
+        <svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <div class="flex items-end justify-center gap-0.5">
+        <span class="counter text-4xl font-bold text-[#1e3a8a]" style="font-family:'Playfair Display',serif;line-height:1;">0</span>
+      </div>
+      <div class="w-7 h-[3px] bg-[#dd5236] rounded mx-auto my-2.5"></div>
+      <p class="text-gray-500 text-sm font-medium">Classrooms</p>
+    </div>
+
+    <!-- Years -->
+    <div class="stat-card bg-white rounded-2xl p-7 text-center border border-gray-100 relative overflow-hidden
+                opacity-0 translate-y-9 transition-all duration-700
+                hover:shadow-xl hover:border-blue-100 group"
+         style="transition-delay:0.3s;" data-target="10" data-suffix="+">
+      <div class="absolute bottom-0 left-0 right-0 h-1 bg-[#1e3a8a]
+                  scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 rounded-b-2xl"></div>
+      <div class="icon-box w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-4
+                  group-hover:bg-[#1e3a8a] group-hover:-rotate-6 group-hover:scale-110 transition-all duration-300">
+        <svg class="icon-svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+      </div>
+      <div class="flex items-end justify-center gap-0.5">
+        <span class="counter text-4xl font-bold text-[#1e3a8a]" style="font-family:'Playfair Display',serif;line-height:1;">0</span>
+        <span class="text-2xl font-bold text-[#dd5236] leading-tight">+</span>
+      </div>
+      <div class="w-7 h-[3px] bg-[#dd5236] rounded mx-auto my-2.5"></div>
+      <p class="text-gray-500 text-sm font-medium">Years of Excellence</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ACADEMIC PROGRAMS SECTION -->
+<section class="bg-gray-50 py-20 px-4">
+
+  <!-- Header -->
+  <div class="text-center mb-14">
+    <span class="inline-block bg-red-50 text-[#dd5236] text-xs font-bold
+                 px-5 py-1.5 rounded-full tracking-widest uppercase mb-4">
+      Education Stages
+    </span>
+    <h2 class="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-3"
+        style="font-family:'Playfair Display',serif;">
+      Academic Programs
+    </h2>
+    <p class="text-gray-500 text-sm max-w-md mx-auto leading-relaxed">
+      From early childhood to graduation — a complete, world-class education journey for every student.
+    </p>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+
+    <!-- Kindergarten -->
+    <div class="prog-card bg-white rounded-2xl overflow-hidden border border-gray-100
+                opacity-0 translate-y-8 transition-all duration-700
+                hover:shadow-2xl hover:border-blue-100 group"
+         style="transition-delay:.05s;">
+
+      <div class="relative h-48 overflow-hidden">
+        <img src="" alt="Kindergarten"
+             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <!-- fallback gradient if no image -->
+        <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a8a] to-[#3b5fd4] opacity-0 peer-[img-error]:opacity-100"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <span class="absolute top-4 left-4 bg-white/90 text-[#1e3a8a]
+                     text-xs font-bold px-3 py-1 rounded-full">
+          Ages 4 – 6
+        </span>
+      </div>
+
+      <div class="p-6">
+        <h3 class="text-lg font-bold text-[#1e3a8a] mb-2"
+            style="font-family:'Playfair Display',serif;">
+          Kindergarten
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+          A nurturing environment designed to build strong foundations for early learners.
+        </p>
+        <a href="#" class="inline-flex items-center gap-1.5 text-[#1e3a8a] text-sm font-semibold
+                           relative group/btn hover:text-[#dd5236] transition-colors duration-300">
+          Learn More
+          <svg class="group-hover/btn:translate-x-1 transition-transform duration-300"
+               width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+          <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#dd5236] rounded
+                       group-hover/btn:w-full transition-all duration-300"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Primary School -->
+    <div class="prog-card bg-white rounded-2xl overflow-hidden border border-gray-100
+                opacity-0 translate-y-8 transition-all duration-700
+                hover:shadow-2xl hover:border-blue-100 group"
+         style="transition-delay:.15s;">
+
+      <div class="relative h-48 overflow-hidden">
+        <img src="\" alt="Primary School"
+             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <span class="absolute top-4 left-4 bg-white/90 text-[#1e3a8a]
+                     text-xs font-bold px-3 py-1 rounded-full">
+          Grades 1 – 5
+        </span>
+      </div>
+
+      <div class="p-6">
+        <h3 class="text-lg font-bold text-[#1e3a8a] mb-2"
+            style="font-family:'Playfair Display',serif;">
+          Primary School
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+          Developing essential academic skills and curiosity for lifelong learning.
+        </p>
+        <a href="#" class="inline-flex items-center gap-1.5 text-[#1e3a8a] text-sm font-semibold
+                           relative group/btn hover:text-[#dd5236] transition-colors duration-300">
+          Learn More
+          <svg class="group-hover/btn:translate-x-1 transition-transform duration-300"
+               width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+          <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#dd5236] rounded
+                       group-hover/btn:w-full transition-all duration-300"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Middle School -->
+    <div class="prog-card bg-white rounded-2xl overflow-hidden border border-gray-100
+                opacity-0 translate-y-8 transition-all duration-700
+                hover:shadow-2xl hover:border-blue-100 group"
+         style="transition-delay:.25s;">
+
+      <div class="relative h-48 overflow-hidden">
+        <img src="images/middle.jpg" alt="Middle School"
+             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <span class="absolute top-4 left-4 bg-white/90 text-[#1e3a8a]
+                     text-xs font-bold px-3 py-1 rounded-full">
+          Grades 6 – 8
+        </span>
+      </div>
+
+      <div class="p-6">
+        <h3 class="text-lg font-bold text-[#1e3a8a] mb-2"
+            style="font-family:'Playfair Display',serif;">
+          Middle School
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+          Strengthening critical thinking and personal growth as students prepare for advanced academics.
+        </p>
+        <a href="#" class="inline-flex items-center gap-1.5 text-[#1e3a8a] text-sm font-semibold
+                           relative group/btn hover:text-[#dd5236] transition-colors duration-300">
+          Learn More
+          <svg class="group-hover/btn:translate-x-1 transition-transform duration-300"
+               width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+          <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#dd5236] rounded
+                       group-hover/btn:w-full transition-all duration-300"></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- High School -->
+    <div class="prog-card bg-white rounded-2xl overflow-hidden border border-gray-100
+                opacity-0 translate-y-8 transition-all duration-700
+                hover:shadow-2xl hover:border-blue-100 group"
+         style="transition-delay:.35s;">
+
+      <div class="relative h-48 overflow-hidden">
+        <img src="" alt="High School"
+             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <span class="absolute top-4 left-4 bg-white/90 text-[#1e3a8a]
+                     text-xs font-bold px-3 py-1 rounded-full">
+          Grades 9 – 12
+        </span>
+      </div>
+
+      <div class="p-6">
+        <h3 class="text-lg font-bold text-[#1e3a8a] mb-2"
+            style="font-family:'Playfair Display',serif;">
+          High School
+        </h3>
+        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+          Preparing students for university and beyond with rigorous academics and leadership.
+        </p>
+        <a href="#" class="inline-flex items-center gap-1.5 text-[#1e3a8a] text-sm font-semibold
+                           relative group/btn hover:text-[#dd5236] transition-colors duration-300">
+          Learn More
+          <svg class="group-hover/btn:translate-x-1 transition-transform duration-300"
+               width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+          <span class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#dd5236] rounded
+                       group-hover/btn:w-full transition-all duration-300"></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
