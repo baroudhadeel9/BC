@@ -112,3 +112,107 @@ const progObs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 progCards.forEach(c => progObs.observe(c));
+
+
+
+// Facilities Section — Scroll Entrance
+const facilityCards = document.querySelectorAll('.facility-card');
+const facilityObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.remove('opacity-0', 'translate-y-10');
+      e.target.classList.add('opacity-100', 'translate-y-0');
+      facilityObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+facilityCards.forEach(c => facilityObs.observe(c));
+
+
+  // Auto Slider
+  const slider = document.getElementById('campusSlider');
+  let scrollPos = 0;
+
+  setInterval(() => {
+    if (!slider) return;
+
+    scrollPos += slider.clientWidth * 0.6;
+    if (scrollPos >= slider.scrollWidth - slider.clientWidth) {
+      scrollPos = 0;
+    }
+
+    slider.scrollTo({
+      left: scrollPos,
+      behavior: 'smooth'
+    });
+  }, 5000);
+
+  // Scroll Animation
+  const campusSlides = document.querySelectorAll('[data-campus-slide]');
+  const campusObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.remove('opacity-0', 'translate-y-8');
+        e.target.classList.add('opacity-100', 'translate-y-0');
+        campusObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.25 });
+
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Slider Logic
+    const track = document.getElementById('tourTrack');
+    const cards = document.querySelectorAll('.tour-card');
+    const nextBtn = document.getElementById('tourNext');
+    const prevBtn = document.getElementById('tourPrev');
+    let currentIndex = 0;
+
+    function updateSlider() {
+      // يحرك المسار بنسبة مئوية بناءً على عدد البطاقات
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % cards.length;
+      updateSlider();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      updateSlider();
+    });
+
+    // 2. Scroll Animation Logic
+    const observerOptions = { threshold: 0.1 };
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0', 'translate-x-10', '-translate-x-10');
+          entry.target.classList.add('opacity-100', 'translate-x-0');
+        }
+      });
+    }, observerOptions);
+
+    const elementsToReveal = document.querySelectorAll('.tour-video, .tour-slider');
+    elementsToReveal.forEach(el => revealObserver.observe(el));
+  });
+
+  // Student Life Section — Scroll Entrance
+const slCards = document.querySelectorAll('.sl-card');
+const slObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.remove('opacity-0', 'translate-y-8');
+      e.target.classList.add('opacity-100', 'translate-y-0');
+      slObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+slCards.forEach(c => slObs.observe(c));
+
+
