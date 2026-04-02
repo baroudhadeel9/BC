@@ -216,3 +216,93 @@ const slObs = new IntersectionObserver((entries) => {
 slCards.forEach(c => slObs.observe(c));
 
 
+// Latest News Section — Scroll Entrance
+const newsCards = document.querySelectorAll('.news-card');
+const newsObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.remove('opacity-0', 'translate-y-8');
+      e.target.classList.add('opacity-100', 'translate-y-0');
+      newsObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+newsCards.forEach(c => newsObs.observe(c));
+
+
+// Gallery Section — Scroll Entrance
+const galleryItems = document.querySelectorAll('.gallery-item');
+const galleryObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }, i * 80);
+      galleryObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+galleryItems.forEach(item => {
+  item.style.opacity = '0';
+  item.style.transform = 'translateY(30px)';
+  item.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+  galleryObs.observe(item);
+});
+
+
+
+// Call To Action Section — Scroll Entrance Animation
+const ctaSection = document.querySelector('#admissions');
+const ctaBadge = ctaSection?.querySelector('span');
+const ctaTitle = ctaSection?.querySelector('h2');
+const ctaDivider = ctaSection?.querySelector('.w-16');
+const ctaText = ctaSection?.querySelector('p');
+const ctaButtons = ctaSection?.querySelector('.flex.flex-col');
+
+const ctaElements = [ctaBadge, ctaTitle, ctaDivider, ctaText, ctaButtons];
+
+const ctaObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      ctaElements.forEach((el, i) => {
+        if (!el) return;
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(24px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        setTimeout(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        }, i * 120);
+      });
+      ctaObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+if (ctaSection) ctaObs.observe(ctaSection);
+
+
+// Footer — Scroll Entrance Animation
+const footerCols = document.querySelectorAll('footer .grid > div');
+
+const footerObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      footerCols.forEach((col, i) => {
+        col.style.opacity = '0';
+        col.style.transform = 'translateY(20px)';
+        col.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        setTimeout(() => {
+          col.style.opacity = '1';
+          col.style.transform = 'translateY(0)';
+        }, i * 120);
+      });
+      footerObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+const footerGrid = document.querySelector('footer .grid');
+if (footerGrid) footerObs.observe(footerGrid);
